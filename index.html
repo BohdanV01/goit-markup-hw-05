@@ -415,7 +415,81 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="footer-stekst">Subscribe</p>
+                <form class="footer-form">
+                    <input class="footer-mail" type="email" 
+                    name="footer-email"
+                    placeholder="E-mail">
+                    <button class="footer-button" type="submit">Subscribe
+                    <svg class="svg-footer>" width="24" height="24">
+                        <use href="./images/symbol-defs-t.svg#icon-send"></use>
+                    </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="backdrop is-open">
+        <div class="modal">
+        <button type="button" class="close-icon">
+            <svg class="close" width="8" height="8">
+                <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+        </button>
+        <p class="modal-titel">Leave your contacts and we will call you back</p>
+        <form class="form" name="issue_report_form" autocomplete="off">
+            <div class="modal-label">
+            <label class="form-label">Name</label>
+                <div class="div-svg">
+                <input class="form-input" type="text" name="username" placeholder="" autofocus />
+                <svg class="modal-input-svg">
+                    <use href="./images/symbol-defs.svg#Vector"></use>
+                </svg>
+                </div>
+            </div>
+            <div class="modal-label">
+            <label class="form-label">Phone</label>
+                <div class="div-svg">
+                <input class="form-input" type="tel" name="topic" placeholder="" />
+                <svg class="modal-input-svg">
+                    <use href="./images/symbol-defs.svg#Phone"></use>
+                </svg>
+                </div>
+            </div>
+            <div class="modal-label">
+            <label class="form-label">Email</label>
+                <div class="div-svg">
+                <input class="form-input" type="text" name="username" placeholder="" autofocus />
+                <svg class="modal-input-svg">
+                    <use href="./images/symbol-defs.svg#Mail"></use>
+                </svg>
+                </div>
+            </div>
+            <div class="modal-textarea">
+            <label class="form-label">Comment</label>
+                <div class="div-svg">
+                <textarea class="form-input-coment" name="description" rows="5"
+                    placeholder="Text input"></textarea>
+                </div>
+            </div>
+            
+            <div class="checkbox">
+                <label class="checkbox-label">
+                    <input class="checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="true">
+                    <span class="custom-checkbox">
+                        <svg class="custom-checkbox-icon" width="10" height="8">
+                            <use href="./images/symbol-checkboks.svg#Checkbox"></use>
+                        </svg>
+                    </span>
+                    <span>
+                        I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy Policy</a>
+                    </span>
+                </label>
+            </div>
+            <button type="submit" class="modal-button">Send</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>

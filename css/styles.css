@@ -684,19 +684,13 @@ textarea {
     flex-direction: column;
     margin: 0;
     gap: 8px;
-    padding-top: 16px;
-    padding-left: 24px;
-    padding-bottom: 136px;
-    max-width: 360px;
-    height: 336px;
+    padding-top: 0;
+    padding-left: 0;
+    max-width: 100%;
 }
 .div-svg {
     position: relative;
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 .div-svg:hover,
@@ -714,6 +708,9 @@ textarea {
     height: 40px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    color: #2e2f42;
+    outline: transparent;
 }
 
 .form-input:focus+.modal-input-svg {
@@ -806,6 +803,8 @@ textarea {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input-coment {

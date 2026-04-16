@@ -728,7 +728,7 @@ textarea {
     outline: transparent;
 }
 
-.form-input:focus+.modal-input-svg {
+.form-input:focus + .modal-input-svg {
     fill: #4d5ae5;
 }
 .form-input:focus {
@@ -749,8 +749,8 @@ textarea {
     color: #009688;
 }
 .checkbox {
-    margin-top: 16px;
-    margin-bottom: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .checkbox-label{
     display: flex;
@@ -790,7 +790,7 @@ textarea {
 
 }
 
-.checkbox-input:checked+.custom-checkbox {
+.checkbox-input:checked + .custom-checkbox {
     border-radius: 2px;
     background-color: #404bbf;
     border: 1px solid #404bbf;
